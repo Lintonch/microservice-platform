@@ -1,0 +1,11 @@
+/**/target/
+/**/build/
+*.class
+.classpath
+.project
+.settings/
+bin/
+.DS_Store
+!mvnw
+!mvnw.cmd
+!.mvn/wrapper/maven-wrapper.properties
