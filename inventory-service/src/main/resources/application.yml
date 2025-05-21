@@ -4,8 +4,23 @@ server:
 spring:
   application:
     name: inventory-service
+
   config:
     import: "configserver:http://localhost:8888"
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:9000  # Your Admin Server URL
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"               # expose all actuator endpoints for Admin Server
+  endpoint:
+    health:
+      show-details: always         # detailed health info
 
 eureka:
   client:
