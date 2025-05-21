@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///Users/lintonchoudhury/microservices/microservice-platform/config-repo
+          default-label: main  # Optional if you're using Git and want to specify a branch
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
