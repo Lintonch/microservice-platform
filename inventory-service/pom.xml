@@ -47,11 +47,16 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+		<!-- Zipkin dependency -->
+
+
 <dependency>
   <groupId>de.codecentric</groupId>
   <artifactId>spring-boot-admin-starter-client</artifactId>
   <version>3.1.6</version>
 </dependency>
+
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
